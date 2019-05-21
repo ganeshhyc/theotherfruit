@@ -1,6 +1,6 @@
 app.directive('navbar',function(){
     return {
-        templateUrl : '../application/components/navbar.html',
+        templateUrl : 'application/components/navbar.html',
         scope : {
             navbarvar : '='
         }
@@ -8,7 +8,7 @@ app.directive('navbar',function(){
 });
 app.directive('welcome',function(){
     return {
-        templateUrl : '../application/components/welcome.html',
+        templateUrl : 'application/components/welcome.html',
         scope : {
             welcomevar : '='
         }
@@ -16,7 +16,7 @@ app.directive('welcome',function(){
 });
 app.directive('signup',function(){
     return {
-        templateUrl : '../application/components/signup.html',
+        templateUrl : 'application/components/signup.html',
         scope : {
             signupvar : '='
         }
@@ -24,7 +24,7 @@ app.directive('signup',function(){
 });
 app.directive('random',function(){
     return {
-        templateUrl : '../application/components/random.html',
+        templateUrl : 'application/components/random.html',
         scope : {
             randomvar : '='
         }

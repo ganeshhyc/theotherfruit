@@ -1,10 +1,10 @@
 app.config(function($routeProvider){
     $routeProvider
     .when('/',{
-        templateUrl : '../application/view/landing.html'
+        templateUrl : 'application/view/landing.html'
     })
     .when('/signup',{
-        templateUrl : '../application/view/signup.html'
+        templateUrl : 'application/view/signup.html'
     })
     .otherwise({
         redirectTo : '/'
