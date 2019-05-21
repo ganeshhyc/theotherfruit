@@ -14,7 +14,14 @@
                 <a ng-click="toggle_gender('others')"><img ng-src="assets/icons/{{gender.other}}" class="img-fluid img-responsive" style="height: 80px;"></a>
             </div>
         </div>
+    </div><br>
+    <div class="mx-auto" style="width:320px">
+        <div class="form-group" ng-if="!nextStep">
+            <h6>loation</h6>
+            <input type="text" class="form-control" ng-model="search_city" ng-click = "city_autocomplete(search_city)" placeholder="you can change this any time">
+        </div>
+        <!-- <ul class="list-group">
+            <li class="list-group-item" ng-repeat="city_name in search_arr | limitTo : 5">{{city_name}}</li>
+        </ul> -->
     </div>
-        <form role="form" class="mx-auto" style="width:300px">
-        </form>
 </div>

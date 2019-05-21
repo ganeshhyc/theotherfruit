@@ -1,5 +1,6 @@
 app.controller('nearbyCtrl',function($scope){
     $scope.city = city;
+    $scope.search_arr = [];
     $scope.gender = {
         "male":"male.png",
         "female":"female.png",
@@ -42,6 +43,18 @@ app.controller('nearbyCtrl',function($scope){
             default:
                 console.log('invalid!');
 
+        }
+    }
+    $scope.city_autocomplete = function(sub_string){
+        if(sub_string !== undefined){
+            $scope.search_arr = $scope.city.filter(function(city_name){
+                let sub = sub_string.substring(0, sub_string.length-1);
+                let res = city_name.toLowerCase().includes(sub);
+                return res;
+            })
+        }
+        else if(sub_string == undefined || sub_string == ''){
+            $scope.search_arr = [];
         }
     }
 })

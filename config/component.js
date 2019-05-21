@@ -30,6 +30,14 @@ app.directive('nearby',function(){
         }
     }
 });
+app.directive('terms',function(){
+    return {
+        templateUrl : 'application/components/terms.html',
+        scope : {
+            termsvar : '='
+        }
+    }
+});
 app.directive('random',function(){
     return {
         templateUrl : 'application/components/random.html',
@@ -37,4 +45,4 @@ app.directive('random',function(){
             randomvar : '='
         }
     }
-})
+});
