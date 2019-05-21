@@ -1,0 +1,23 @@
+<div ng-controller="interestCtrl"><br>
+    <div ng-if="!finished">
+        <h5 class="text-center">SHOW ME</h5><br>
+        <div class="mx-auto" style="max-width:700px">
+            <div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-6" style="padding-bottom:25px;" ng-repeat="interest in interest_arr">
+                        <a ng-click=""><img ng-src="assets/icons/{{interest}}" class="img-fluid img-responsive" height= "155px"></a>
+                    </div>
+                </div><br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-6 text-left">
+                    <a class="btn btn-info btn-back" style="width:140px;" ng-click="setProfile='default'">back</a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-6 text-right">
+                    <a class="btn btn-info btn-next" style="width:140px;" ng-click="finish()">next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

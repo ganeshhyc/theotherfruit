@@ -46,6 +46,14 @@ app.directive('profile',function(){
         }
     }
 });
+app.directive('interest',function(){
+    return {
+        templateUrl : 'application/components/interest.html',
+        scope : {
+            interestvar : '='
+        }
+    }
+});
 app.directive('random',function(){
     return {
         templateUrl : 'application/components/random.html',
