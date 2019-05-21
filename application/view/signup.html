@@ -1,0 +1,36 @@
+<div class="container">
+    <navbar></navbar>
+    <section id="tabs" style="padding-top:5px;">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <nav>
+                    <div class="nav nav-tabs nav-fill border-0" id="nav-tab" role="tablist" ng-init="tab='home'">
+                        <a class="nav-item nav-link active font-weight-light" id="nav-home-tab" data-toggle="tab" role="tab" ng-click="tab='home'" ng-class="tab!=='home'?'tab-no-active':''" aria-controls="nav-home" aria-selected="true">sign up</a>
+                        <a class="nav-item nav-link font-weight-light" id="nav-nearly-tab" data-toggle="tab" role="tab" ng-click="tab='nearly'" ng-class="tab!=='nearly'?'tab-no-active':''" aria-controls="nav-nearly" aria-selected="false">nearly there</a>
+                        <a class="nav-item nav-link font-weight-light" id="nav-term-tab" data-toggle="tab" role="tab"  ng-click="tab='term'" ng-class="tab!=='term'?'tab-no-active':''" aria-controls="nav-term" aria-selected="false">terms</a>
+                        <a class="nav-item nav-link font-weight-light" id="nav-profile-tab" data-toggle="tab" role="tab"  ng-click="tab='profile'" ng-class="tab!=='profile'?'tab-no-active':''" aria-controls="nav-profile" aria-selected="false">profile type</a>
+                        <a class="nav-item nav-link font-weight-light" id="nav-interest-tab" data-toggle="tab" role="tab"  ng-click="tab='interest'" ng-class="tab!=='interest'?'tab-no-active':''" aria-controls="nav-interest" aria-selected="false">interest</a>
+                    </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent" style="padding-top:20px;">
+                    <div class="tab-pane fade" ng-class="tab == 'home' ? 'show active':''" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <signup></signup>
+                        <div style="visibility: hidden"><random></random></div>
+                    </div>
+                    <div class="tab-pane fade" ng-class="tab == 'nearly' ? 'show active':''" id="nav-nearly" role="tabpanel" aria-labelledby="nav-nearly-tab">
+                        <div style="visibility: hidden"><random></random></div>                        
+                    </div>
+                    <div class="tab-pane fade" ng-class="tab == 'term' ? 'show active':''" id="nav-term" role="tabpanel" aria-labelledby="nav-term-tab">
+                        <div style="visibility: hidden"><random></random></div>                        
+                    </div>
+                    <div class="tab-pane fade" ng-class="tab == 'profile' ? 'show active':''" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div style="visibility: hidden"><random></random></div>
+                    </div>
+                    <div class="tab-pane fade" ng-class="tab == 'interest' ? 'show active':''" id="nav-interest" role="tabpanel" aria-labelledby="nav-interest-tab">
+                        <div style="visibility: hidden"><random></random></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
