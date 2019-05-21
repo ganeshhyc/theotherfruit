@@ -4,6 +4,45 @@ app.controller('profileCtrl',function($scope){
         "member":"member.png",
         "provider":"provider.png"
     };
+    $scope.profile_select = {
+        "business":"business.png",
+        "venue":"venue.png",
+        "supplier":"supplier.png"
+    };
+    $scope.select_profile = function(profile){
+        switch(profile){
+            case 'business' : {
+                if($scope.profile_select.business == 'business.png') {
+                    $scope.profile_select.business = 'business_selected.png';
+                } else  {
+                    $scope.profile_select.business = 'business.png';
+                }
+            }
+            break;
+            case 'venue' : {
+                if($scope.profile_select.venue == 'venue.png') {
+                    $scope.profile_select.venue = 'venue_selected.png'; 
+                } else  {
+                    $scope.profile_select.venue = 'venue.png';
+                }
+            }
+            break;
+            case 'supplier' : {
+                {
+                    if($scope.profile_select.supplier == 'supplier.png') {
+                        $scope.profile_select.supplier = 'supplier_selected.png';
+                    } else  {
+                        $scope.profile_select.supplier = 'supplier.png';
+                    }
+                }
+            }
+            break;
+            default:
+                console.log('invalid!');
+
+        }
+    }
+    $scope.setProfile = 'default';
     $scope.profile_selected = 'default';
     $scope.toggle_profile = function(profile){
         switch(profile){
@@ -49,5 +88,8 @@ app.controller('profileCtrl',function($scope){
                 console.log('invalid!');
 
         }
+    }
+    $scope.my_profile = function(profile_name){
+        $scope.setProfile = profile_name;
     }
 })
