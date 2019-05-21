@@ -20,4 +20,10 @@
             </div>
         </div>
     </div>
+    <div ng-if="finished" class="text-center" style="padding-top:50px;">
+        <img ng-src="assets/icons/finish.png" class="img-fluid img-responsive" style="height:135px"><br><br>
+        <h5 class="text-center">BOOM!</h5>
+        <p class="text-center" style="font-size: 14px;">your link has been sent by email.</p><br>
+        <a class="btn btn-info btn-back" style="width:140px;" ng-click="setProfile='default'">see you soon</a>
+    </div>
 </div>
