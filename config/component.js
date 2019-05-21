@@ -38,6 +38,14 @@ app.directive('terms',function(){
         }
     }
 });
+app.directive('profile',function(){
+    return {
+        templateUrl : 'application/components/profile.html',
+        scope : {
+            profilevar : '='
+        }
+    }
+});
 app.directive('random',function(){
     return {
         templateUrl : 'application/components/random.html',

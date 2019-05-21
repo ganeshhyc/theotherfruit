@@ -1,0 +1,57 @@
+<div ng-controller="profileCtrl"><br>
+    <h5 class="text-center">I'M A...</h5><br>
+    <div class="mx-auto" style="max-width:400px">
+        <div class="row text-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4">
+                <a ng-click="toggle_profile('member')"><img ng-src="assets/icons/{{profile.member}}" class="img-fluid img-responsive" style="height: 95px;"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4">
+                <a ng-click="toggle_profile('artist')"><img ng-src="assets/icons/{{profile.artist}}" class="img-fluid img-responsive" style="height: 95px;"></a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-4">
+                <a ng-click="toggle_profile('provider')"><img ng-src="assets/icons/{{profile.provider}}" class="img-fluid img-responsive" style="height: 95px;"></a>
+            </div>
+        </div><br>
+        <div ng-if="profile_selected == 'default'">
+            <p>every member may buy tell or create and to get started please select a category that works for you</p>
+            <ul>
+                <li>members may book or arrange any collaboration</li>
+                <li>artist categories vary according to expertise</li>
+                <li>providers are the bussinesses, locations or services thatt support the TOF community</li>
+            </ul>
+        </div>
+        <div ng-if="profile_selected == 'artist'">
+            <p>every member may buy tell or create and to get started please select a category that works for you</p>
+            <ul>
+                <li>members may book or arrange any collaboration</li>
+                <li>artist categories vary according to expertise</li>
+                <li>providers are the bussinesses, locations or services thatt support the TOF community</li>
+            </ul>
+        </div>
+        <div ng-if="profile_selected == 'member'">
+            <p>every member may buy tell or create and to get started please select a category that works for you</p>
+            <ul>
+                <li>members may book or arrange any collaboration</li>
+                <li>artist categories vary according to expertise</li>
+                <li>providers are the bussinesses, locations or services thatt support the TOF community</li>
+            </ul>
+        </div>
+        <div ng-if="profile_selected == 'provider'">
+            <p>every member may buy tell or create and to get started please select a category that works for you</p>
+            <ul>
+                <li>members may book or arrange any collaboration</li>
+                <li>artist categories vary according to expertise</li>
+                <li>providers are the bussinesses, locations or services thatt support the TOF community</li>
+            </ul>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-6 text-left">
+                <a class="btn btn-info btn-back" style="width:140px;">back</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-6 text-right">
+                <button type="button" class="btn btn-info btn-next" style="width:140px;">next</button>
+            </div>
+        </div>
+    </div>
+</div>
