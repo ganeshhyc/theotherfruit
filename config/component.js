@@ -22,6 +22,14 @@ app.directive('signup',function(){
         }
     }
 });
+app.directive('nearby',function(){
+    return {
+        templateUrl : 'application/components/nearby.html',
+        scope : {
+            nearbyvar : '='
+        }
+    }
+});
 app.directive('random',function(){
     return {
         templateUrl : 'application/components/random.html',
