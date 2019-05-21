@@ -10,22 +10,22 @@
     <form role="form" class="mx-auto" style="width:320px">
         <div class="form-group" ng-if="!nextStep">
             <h6>email</h6>
-            <input type="text" name="name" class="form-control" id="name" placeholder="123@protonmail.com">
+            <input type="text" class="form-control placeholder="123@protonmail.com">
         </div><br>
         <div class="form-group" ng-if="!nextStep">
             <h6>password</h6>
-            <input type="password" name="name" class="form-control" id="name" placeholder="at least 6 character or longer">
+            <input type="password" class="form-control" placeholder="at least 6 character or longer">
         </div><br>
         <div class="text-center"  ng-class="nextStep==true ? 'd-none':''">
             <button type="button" class="btn btn-info btn-next" style="width:150px;" ng-click="nextStep = true;">next</button>
         </div>
         <div class="form-group" ng-if="nextStep">
             <h6>display name</h6>
-            <input type="text" name="name" class="form-control" id="name" placeholder="feel free to use a nick name">
+            <input type="text" class="form-control" placeholder="feel free to use a nick name">
         </div><br>
         <div class="form-group" ng-if="nextStep">
             <h6>username</h6>
-            <input type="text" name="name" class="form-control" id="name" placeholder="pick one you like">
+            <input type="text" class="form-control" placeholder="pick one you like">
         </div><br>
         <div class="text-center"  ng-class="nextStep==false ? 'd-none':''">
                 <button type="button" class="btn btn-info btn-back" style="width:140px;" ng-click="nextStep = false;">back</button>
